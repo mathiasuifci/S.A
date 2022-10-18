@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>,
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN VALIDAÇÃ0</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/10c7afe14d.js" 
+    crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <form  id="form-login" >
+        
+        <div class="title">
+            <h2>Login</h2>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-grupo">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="username" placeholder="Nome de usuário" name="usuario">
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Mensagem de erro</p>
+        </div>
+        <!-- SENHA -->
+        <div class="input-grupo">
+            <label for="senha">Senha</label>
+            <input type="password" id="password" placeholder="Senha" name="senha"> <input type="checkbox" style="height: 15px; width: 15px;"
+            onclick="show()">Mostrar senha
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <p>Mensagem de erro</p>
+        </div>
+
+        <button type="submit" onclick="LogarUsuario();return false"  class="btn">Entrar</button>
+        <p> Não possui uma conta?
+            <a href="../trabalhosa/cadastro.html">Cadastrar</a>
+    </form>
+
+    <img id="logo" src="WorldPlantsLogo.png">
+    <!-- JAVASCRIPT -->
+    <script src="login.js"></script>
+</body>
+</html>

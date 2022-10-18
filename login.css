@@ -1,0 +1,117 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+/*     background-image:  url(https://www.10wallpaper.com/wallpaper/1366x768/1209/Fresh_green_leaves_theme_Desktop_Wallpapers_16_1366x768.jpg);
+  background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+body {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10rem;
+    align-items: center;
+    min-height: 100vh;
+   
+    background-image: url(https://expresso.estadao.com.br/wp-content/uploads/2018/11/iStock-natureza.jpg);
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#form-login{
+    width:336px;
+    padding:15px;
+    margin-right: 35rem;
+    /* text-transform: uppercase; */
+   /*  background-color: rgb(82, 163, 172); */
+}
+
+body #logo{ 
+    margin-bottom: auto;
+    margin-right: 30px;
+ }
+
+.title {
+    
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.input-grupo {
+    margin:20px 0; 
+    position:relative;
+
+}
+
+.input-grupo label {
+    display:inline-block;
+    margin-bottom: 5px;
+}
+
+.input-grupo input {
+    display:block;
+    width:90%;
+    padding:10px;   
+    background-color: aliceblue;
+     border: 1px solid #040b18;
+    border-radius: 8px;
+}
+
+.erro input {
+    border:3px rgb(255, 10, 10) solid;
+}
+
+.sucesso input {
+    border:3px green solid;
+}
+
+ .input-grupo i {
+     position:absolute;
+     right:10px;
+     top:35px;
+     visibility: hidden;
+ }
+
+
+ .sucesso i.fa-check-circle{
+     visibility: visible;
+     color:green;
+ }
+
+ .erro i.fa-exclamation-circle {
+    visibility: visible;
+    color:red;
+}
+
+
+ .input-grupo p {
+     font-size: 15px;
+     color:rgb(211, 19, 19);
+     visibility: hidden;
+ }
+
+ .erro p {
+     visibility: visible;
+ }
+
+ .btn {
+     cursor: pointer;
+     width:45%;
+     margin-left: 4.5rem;
+     padding:10px;
+     font-size: 1.0rem;
+     background-color: rgb(30, 210, 69);
+     color:rgb(0, 0, 0);
+     text-transform: uppercase;
+     border:none;
+     border-radius: 32px;
+     transition: all .3s ease-in-out;
+ }
+

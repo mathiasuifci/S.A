@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>WorldPlants</title>
+</head>
+<body  onload="MostraUserLogado()">
+    <div class="container">
+        <div id="nav">
+            <div id="logo"><img src="WorldPlantsLogo.png"></div>
+
+            <div id="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Análise da planta</a>
+                <a href="../trabalhosa/perfildousuario.html">Perfil</a>
+                <a href="#">Contatos</a>
+            
+            </div>
+
+        </div>
+        <div id="main"> <div id="mostraUsuario">
+
+        </div>
+                <p>
+                    Você está no WorldPlants! Edite, adicione e monitore suas plantas favoritas! Descubra se sua planta precisa de água ou luminosidade remotamente.
+                     Dados coletados diretamente da planta com o vaso inteligente, uma tecnologia que envia dados em tempo real para o servidor WEB da WorldPlants.
+                </p>
+           <div id="imgPlantaIoT">  <img src="plantaIot.png"></div>
+            
+        </div>
+        <div id="sidebar">
+            <div class="form-plantas">
+             <h4>Selecione sua planta:</h4>
+             <div id="default">
+                <p> Aprenda um pouco mais sobre as plantas mais comuns para se usar em vasos e decoração: </p>
+            </div><br>
+             <div class="ls-custom-select">
+             <select class='select' id="lista-plantas" name="lista">
+                <option   name="plantas" value="valor1" selected>Plantas</option>
+                <option  name="cactos"value="valor2" >Cactos</option>
+                <option  name="violetas" value="valor3">Violetas</option>
+                <option name="lambari" value="valor4">Lambari</option>
+                <option name="jade" value="valor5"> Jade</option>
+                <option name="orquidea" value="valor6">Orquídea</option>
+                <option name="comigo" value="valor7">Comigo-ningúem-pode</option>
+                <option name="bromelia" value="valor8">Bromélia</option>
+                <option name="espada" value="valor9">Espada de São Jorge</option>
+                <option name="anturio" value="valor10">Antúrio</option>
+                <option name="lirio" value="valor11">Lírios</option>
+                <option name="costela" value="valor12">Costela de Adão</option>
+                <option name="yuca" value="valor13">Yuca</option>
+                <option name="lanca" value="valor14">Lança-de-São-Jorge</option>
+                <option name="samambaia" value="valor15">Samambaia</option>
+                <option name="rabo" value="valor16">Rabo de burro</option>
+                <option value="valor17">Outras</option>
+         
+             </select></div>
+            </div>
+        
+            <div id="cactos">
+            
+                <div class="cactos">
+                 <img src="img/cactos-depositphotos-bgremover.png"alt="some text" width=100% height="100%">
+
+                </div>
+            
+            </div>
+            <div id='violetas'>
+                <div class="violetas">
+                    <img src="img/violetas.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='lambari'>
+                <div class="lambari">
+                    <img src="img/lambari.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            
+            <div id='orquidea'>
+                <div class="orquidea">
+                    <img src="img/orquidea.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='jade'>
+                <div class="jade">
+                    <img src="img/jade.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='comigo'>
+                <div class="comigo">
+                    <img src="img/comigo.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='bromelia'>
+                <div class="bromelia">
+                    <img src="img/bromelia.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='espada'>
+                <div class="espada">
+                    <img src="img/espada.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='anturio'>
+                <div class="anturio">
+                    <img src="img/anturio.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='lirio'>
+                <div class="lirio">
+                    <img src="img/lirio.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='costela'>
+                <div class="costela">
+                    <img src="img/costela-de-adão.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            <div id='yuca'>
+                <div class="yuca">
+                    <img src="img/yuca.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='lanca'>
+                <div class="lanca">
+                    <img src="img/lança-de-são-jorge.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='samambaia'>
+                <div class="samambaia">
+                    <img src="img/samambaia.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+
+            <div id='rabo'>
+                <div class="rabo">
+                    <img src="img/rabo.png"alt="some text" width="100%">
+               
+                </div>
+            </div>
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div id="conteudo1">
+            <h4> Sobre a planta: </h4>
+            <div class="plantas">
+                <p>
+                    Uma breve introdução sobre a planta selecionada.
+                </p>
+
+            </div>
+            <div class="cactos">
+            <p> Os cactos vivem, naturalmente, em locais com pouca água disponível e muita luz solar. 
+                Essas plantas precisam ficar em algum lugar bem ventilado onde bata sol. São fáceis de manusear, ocupam pouco espaço e ajudam a deixar os cômodos da casa mais verdes.
+                </p></div>
+            <div class="violetas">
+                    <p>Essa planta é uma das mais requisitadas na decoração de apartamentos e casas.
+                        As violetas possuem flores pequenas e coloridas enquanto as suas folhas são redondas com um verde intenso.
+                         O porte das violetas é de aproximadamente 15 centímetros e as suas variedades passam de 250 tipos.
+                    </p> 
+                </div> 
+            
+            <div class="lambari">
+                 <p>
+                    O lambari é uma herbácea de folhagem prostrada e suculenta. Suas folhas são muito decorativas, ovaladas, brilhantes, de coloração verde escura, com duas listras de variegação prateadas na face superior e, completamente arroxeadas na face inferior. 
+                    As flores são pequenas e róseas, de importância ornamental secundária.
+                 </p> 
+            </div> 
+
+            <div class="orquidea">
+                <p>
+                    As orquídeas são verdadeiras aliadas para a decoração. São espécies delicadas e muito charmosas, capazes de se adaptar bem em vários ambientes.
+                     E com os cuidados certos é possível manter a saúde da  planta por um longo tempo. 
+                
+                </p> 
+           </div> 
+
+
+           <div class="jade">
+            <p>
+                A planta Jade tem origem africana e também é conhecida como a planta da amizade. Uma das principais características desta espécie é a sua capacidade de adaptar-se ao sol direto ou à meia-sombra, 
+                ou seja, ela pode ser usada em jardins, quintais e varandas ou até em espaços internos bem iluminados.
+            </p> 
+            </div> 
+
+
+            
+           <div class="comigo">
+            <p>
+                A planta comigo-ninguém-pode é vista como uma planta mística que equilibra a energia dos ambientes e afasta o mau-olhado e a inveja. Com uma identidade marcada por folhas verdes robustas e manchadas,
+                 a planta comigo-ninguém-pode foi pouco a pouco conquistando seu espaço na decoração de interiores.
+            </p> 
+            </div> 
+
+            <div class="bromelia">
+                <p>
+                    A bromélia é conhecida pelo agrupamento de suas folhas em formato de roseta e pelo seu visual exótico, cheio de cores. Uma planta bastante popular para a ornamentação de jardins e canteiros, mas que também pode ser cultivada 
+                    em vasos para decorar ambientes internos e compor jardins verticais.
+                </p> 
+            </div> 
+
+            <div class="espada">
+             <p>
+                A Espada de São Jorge é uma planta muito linda e imponente. Ela tem uma característica marcante, que é a de ser fácil de cuidar e de plantar. Além disso, ela também pode ser usada como proteção para certos ambientes. 
+             </p> 
+            </div> 
+            
+        
+    
+            <div class="anturio">
+                <p>
+                    Você sabe o que é antúrio? Esse nome, um tanto complicado, pode confundir muita gente. Porém, não se engane: a nomenclatura pode até não te trazer nenhuma memória, mas você certamente já admirou esta bela planta! Isso porque, com ares tropicais e aparência delicada, o antúrio traz charme para qualquer ambiente.
+ 
+                </p> 
+               </div> 
+               
+            
+            <div class="lirio">
+            <p>
+                O lírio é uma planta originária da Ásia, Europa e América do Norte, mas também existem algumas espécies que se encontram na China e no Japão. Com a possibilidade de render lindos arranjos e buquês, o lírio é um dos tipos de flores mais conhecidas e queridas por floristas e apreciadores de plantas.
+ 
+            </p> 
+            </div> 
+
+
+            <div class="costela">
+                <p>
+                    A Costela-de-Adão é muito amada não só pelo seu belo visual, como pela sua fácil manutenção e por se adaptar facilmente a diferentes ambientes. Além disso, suas folhas com recortes a fazem ter uma uma estética delicada para a decoração.
+
+                    Você pode cultivá-la em vasos e posicionar no chão, já que crescem bastante, ou usar apenas uma ou duas folhas em um vaso de vidro com água.  
+               </p> 
+            </div> 
+    
+
+            <div class="yuca">
+                <p>
+                    É uma planta indispensável na vida de quem escolhe uma vida prática, pois ela requer muito poucos cuidados e garante traços modernos.
+
+                    É um arbusto lenhoso com base dilata, que quando plantada no solo, pode alcançar alturas superiores a 6 metros.
+                </p> 
+            </div> 
+
+            
+            <div class="lanca">
+                <p>
+                    A lança de são jorge é uma planta suculenta que tem sua origem no continente africano. Possuem folhas redondas com um padrão verde escuro, que dão nome a planta, possuem formato de lança
+
+Podem aparecer flores em plantas maduras, esta, com uma fragrância característica. A planta é parente da espada de são jorge.
+                   
+                </p> 
+            </div> 
+
+            <div class="samambaia">
+                <p>
+                    Espécie nativa de matas, mas muito cultivada para dentro de casa, a samambaia é uma grande tendência nos projetos de decoração. Algumas são mais rústicas, outras mais sensíveis, mas todas dão um belo caimento e transformam qualquer cantinho.
+                   
+                </p> 
+            </div> 
+
+            <div class="rabo">
+                <p>
+                    É uma suculenta planta perene, produzindo caules rasteiros de até 60 cm de comprimento, com folhas carnudas verde-azuladas e flores terminais rosas a vermelhas no verão.
+                   
+                </p> 
+            </div> 
+
+
+
+            
+        
+    
+
+               
+
+
+
+
+
+        </div>
+          
+        <div id="conteudo2">
+            <h4> Quantidade de água necessária: </h4>
+            <div class="plantas">
+                <p>
+                    Cada planta possui uma necessidade diferente de uso de água.
+                </p>
+            </div>
+            <div class="cactos">
+                <p>
+                   Para os meses mais quentes: regar uma vez por semana. 
+                    Para os meses mais frios: regar duas vezes por mês. Além de controlar a frequência, fique de olho na quantidade de água! A umidade em excesso pode causar prejuízos para os cactos.
+                </p>
+            </div>
+            <div class="violetas">
+                <p>Durante a estação mais fria, a planta deve ser regada uma vez por semana; no verão, duas vezes. Para verificar se a violeta precisa ser regada, basta sentir a umidade da terra com o dedo. 
+                </p> 
+            </div> 
+            <div class="lambari">
+                <p>Regue a planta com frequência. Essa espécie gosta de solo úmido, mas não encharcado! Verifique o solo com o dedo todos os dias. Se ele estiver seco, ponha água suficiente para umedecê-lo por completo. 
+                    O excesso deve escoar pelo fundo do vaso.
+                </p> 
+            </div> 
+
+            <div class="orquidea">
+                <p>Durante os meses mais quentes, o ideal é ter uma rotina de rega de duas vezes por semana, evitando sempre o acúmulo de água no vaso. Já no outono e no inverno, recomenda-se a rega uma única vez na semana. 
+                </p> 
+            </div> 
+
+            <div class="jade">
+                <p>Aguenta um bom período de estiagem já que suas folhas grossas e verdes e o caule são capazes de armazenar água. O recomendado para esta espécie é que a rega seja feita uma vez por semana, mas é importante notar as condições do ambiente e da planta antes de molhar o vaso.
+                </p> 
+            </div> 
+            <div class="comigo">
+                <p>
+                    Para saber o tempo de rega da sua Comigo-ninguém-pode, é preciso observar quanto a terra irá secar e, aí sim, regar novamente. Isso porque, essa planta gosta de umidade alta, mas não de ficar encharcada. E esse tempo também vai variar de acordo com cada estação.
+                </p> 
+            </div> 
+
+            <div class="bromelia">
+                <p>
+                    Em regiões mais úmidas a rega pode acontecer de uma a duas vezes por semana, enquanto que em locais com climas mais secos e durante o verão de três a quatro vezes por semana.
+                </p> 
+                </div> 
+            
+            
+            <div class="espada">
+                 <p>
+                    A planta não necessita de muita água, o que facilita ainda mais o cultivo. Para não errar, regue-a somente quando a camada de cima do solo secar completamente. Verifique-a espetando o dedo.
+Coloque bastante água para deixar o solo encharcado, mas não a ponto de formar poças.
+                </p> 
+            </div> 
+                   
+            <div class="anturio">
+                <p>
+                    Por ser uma planta tropical, o antúrio gosta de muita umidade! Por isso, a rega deve ocorrer com frequência: três vezes por semana durante as estações mais quente e duas em períodos mais frios. Tenha atenção com a planta no momento da rega,
+                     pois a água deve cair somente sobre a terra, evitando a proliferação de fungos.
+ 
+                </p> 
+               </div> 
+            
+            <div class="lirio">
+            <p>
+               
+                A rega do lírio pode ser realizada de 2 a 3 vezes por semana nas épocas mais quentes e secas do ano. No inverno, é recomendado regar apenas 1 vez por semana. O ideal é que a terra fique úmida porém sem acúmulo de água, pois o solo encharcado favorece o apodrecimento do bulbo.
+            </p> 
+            </div> 
+                   
+            <div class="costela">
+                <p>
+                    Regue a sua muda duas vezes na semana – por conta das folhas mais largas, ela tem mais espaço para a evaporação da água. 
+
+                       
+                </p> 
+            </div>
+
+            <div class="yuca">
+                <p>
+                    Apesar de ser uma planta com grande resistência à falta de água, no Verão a yucca agradece regas abundantes, mas sem encharcamento, deixe secar a terra entre cada adição de água. No Inverno modere a rega. O encharcamento é o principal inimigo da yucca, o excesso de água pode levar ao apodrecimento das raízes e à formação de pintas pretas na folhagem.
+
+                </p> 
+            </div> 
+        
+                   
+            <div class="lanca">
+                <p>
+                    Coloque água duas vezes por semana apenas. Para um vaso grande, cerca de um litro e meio de água já é o suficiente para manter a saúde da planta. Procure fazer a rega da lança de são jorge em horários de temperatura amena.
+                </p> 
+            </div> 
+            <div class="samambaia">
+                <p>
+                    Água. As samambaias gostam de umidade, mas não gostam de solo encharcado. Se deixarmos o solo de samambaia muito encharcado corre o risco de suas raízes apodrecerem e você perder a planta. Por isso o ideal é regá-la diariamente com bem pouca água para manter a umidade da terra constante, mas evitando o encharcamento.
+                   
+                </p> 
+            </div> 
+
+            <div class="rabo">
+                <p>
+                    As regas são como em qualquer outra suculenta. Só regue quando a terra ou substrato estiver seco. E quando regar, regue até que a água possa escoar no fundo do vaso.
+                   
+                </p> 
+            </div> 
+
+
+            
+        
+    
+
+            
+            
+
+    
+               
+            
+
+
+
+        </div>
+        <div id="conteudo3">
+            <h4> Curiosidade:</h4>
+            <div class="plantas">
+                <p>
+                    Uma ou mais curiosidades sobre a planta selecionada.
+                </p>
+
+            </div>
+            <div class="cactos">
+               <p>
+                Todos os tipos de cactos dão flores
+                Algumas espécies só florescem depois de alcançarem os 80 anos de idade (elas podem viver por até 200 anos) ou os dois metros de altura. 
+                Depois que as flores aparecem pela primeira vez, elas voltam todos os anos, na mesma época.
+               </p>
+            </div>
+            <div class="violetas">
+                <p>
+                    Por se tratar de uma planta antiga acredita-se que seja nativa da Europa e já possui centenas de anos, 
+                    os gregos amavam violetas, eles acreditavam que ela representava o sentimento entre Zeus e a sua sacerdotisa, o amor.
+                </p>
+            </div>
+            <div class="lambari">
+                <p>Segundo o Horto didático de plantas medicinais da Universidade de Santa Catarina, no México, o preparo de chás com as folhas dessa planta se destaca pelo uso no tratamento do vitiligo.
+                </p> 
+            </div> 
+            <div class="orquidea">
+                <p>A maior orquídea tem 6 metros
+                    As maiores orquídeas encontradas até hoje estão no Brasil, mais propriamente nos estados de Minas Gerais e Bahia, e têm o nome de Epidendrum Scalares.
+                </p> 
+            </div> 
+
+            <div class="jade">
+                <p> A planta Jade simboliza boa sorte em todos os sentidos da vida, atrai dinheiro, prosperidade, riqueza material, fortuna, abundância, fartura e amizades maravilhosas, profundas e duradouras.
+                </p> 
+            </div> 
+          
+            <div class="comigo">
+                <p>
+                    Estudos comprovam que a toxicidade da comigo-ninguém-pode é conhecida há vários anos. Na Segunda Guerra Mundial, por exemplo, essa planta era usada nos campos de concentração em tentativas para conseguir a esterilização.
+                </p>
+            </div>
+
+            <div class="bromelia">
+                <p>
+                    As bromélias garantem a sobrevivência de uma série de insetos e de pequenos e grandes animais. Elas funcionam como facilitadoras da biodiversidade, 
+                    pois o fato de armazenar a água da chuva e umidade, faz com que os animais e outras espécies de vegetais dependam direta ou indiretamente delas para sobreviver.
+                </p> 
+            </div> 
+
+            
+            <div class="espada">
+                <p>Acredita-se que a Espada de São Jorge espanta o mau olhado, afasta as energias negativas, também serve pra espantar a inveja, por ser uma planta de grande resistência, nos protege contra coisas ruins que possa nos atingir.
+                     
+                </p> 
+            </div> 
+                   
+            <div class="anturio">
+                <p>
+                    Planta gigante:
+
+                    O antúrio titã não é uma planta diferenciada apenas pelo cheiro peculiar que exala, mas por suas proporções. A espécie pode atingir quase 3 metros de altura e 1,5 metro de diâmetro, com crescimento de até 16 centímetros por dia. 
+                    Tudo isso pode fazê-la pesar 75 quilos ao florescer.
+ 
+                </p> 
+               </div> 
+               
+            <div class="lirio">
+                <p>
+                    Os lírios são uma das flores mais antigas de que se tem notícia no planeta e as flores de casamento por excelência. Nos casamentos da Grécia Antiga, as noivas utilizavam lírios brancos para adornar seus cabelos e vestido. Já na China, sonhar com Lírios significa casamento próximo.
+                </p> 
+            </div> 
+            
+            <div class="costela">
+                <p>
+                    Essas plantas possuem essas perfurações porque  crescem enroladas em plantas maiores e desenvolvem folhas grandes.  Então, esses furos e rasgos permitem que a luminosidade chegue até as folhas que estão embaixo.    
+                </p> 
+            </div>
+
+            <div class="yuca">
+                <p>
+                    A yuca é uma planta eficaz contra a poluição, ela suprime o amoníaco, benzeno e monóxido de carbono.
+                </p> 
+            </div> 
+        
+                   
+            <div class="lanca">
+                <p>
+                    A lança de São Jorge possuí vários significados dentre eles a prosperidade, também conhecida por ser uma planta protetora usada como amuleto contra energias negativas.
+
+                    É uma planta de origem Africana, e serve como um escudo protetor protegendo o local onde ela é plantada de energias negativas.
+                    
+                    
+                   
+                </p> 
+            </div> 
+            <div class="samambaia">
+                <p>
+                    Samambaias são plantas que não possuem flores, frutos ou sementes.
+                   
+                </p> 
+            </div> 
+
+            <div class="rabo">
+                <p>
+                    Suculenta e pendente, o rabo-de-burro é uma planta de interessante. Suas folhas carnosas cobrem completamente as hastes e têm coloração variada, de verde a amarelada, pontiagudas. Produz florzinhas de coloração rosa em forma de estrela.
+                   
+                </p> 
+            </div> 
+            
+        
+    
+
+            
+
+
+        </div>
+        <div class="rodape" id="footer">
+
+            <h4> "Como as plantas, a amizade não deve ser muito nem pouco regada."
+
+                Carlos Drummond de Andrade</h4>
+        </div>
+
+    </div>
+    
+    <script src="site.js"></script>
+</body>
+</html>
